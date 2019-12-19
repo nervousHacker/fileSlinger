@@ -92,7 +92,7 @@ var FileSlinger = (function (file_upload_url, dropElement) {
         dropElement.ondragleave = function (e) {
             e.stopPropagation();
             e.preventDefault();
-            
+
             typeof onDragLeave === 'function' && onDragLeave();
         };
 
@@ -140,4 +140,11 @@ var FileSlinger = (function (file_upload_url, dropElement) {
     };
 });
 
+
+// test one, test two
+// test three....four
+
+// test six
+
+// here's where five goes
 
