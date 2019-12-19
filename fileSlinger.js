@@ -1,4 +1,4 @@
-﻿
+﻿// fileslinger.js
 
 var FileSlinger = (function (file_upload_url, dropElement) {
     "use strict";
@@ -48,6 +48,7 @@ var FileSlinger = (function (file_upload_url, dropElement) {
 
     var doUpload = function () {
         var fData = new FormData();
+
         fData.append("FileData", uploadQueue[0].file);
 
         xhr.open('POST', file_upload_url);
@@ -91,6 +92,7 @@ var FileSlinger = (function (file_upload_url, dropElement) {
         dropElement.ondragleave = function (e) {
             e.stopPropagation();
             e.preventDefault();
+            
             typeof onDragLeave === 'function' && onDragLeave();
         };
 
